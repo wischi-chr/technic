@@ -66,7 +66,7 @@ minetest.register_abm({
 	interval = 60,
 	chance = 15,
 	action = function(pos, node)
-		if minetest.find_node_near(pos, (moretrees and moretrees.leafdecay_radius) or 5, {"moretrees:rubber_tree_leaves"}) then
+		if minetest.find_node_near(pos, 5, {"moretrees:rubber_tree_leaves"}) then
 			node.name = "moretrees:rubber_tree_trunk"
 			minetest.swap_node(pos, node)
 		end

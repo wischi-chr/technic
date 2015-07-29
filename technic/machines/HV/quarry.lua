@@ -16,6 +16,7 @@ local quarry_demand = 10000
 local function set_quarry_formspec(meta)
 	local radius = meta:get_int("size")
 	local formspec = "size[6,4.3]"..
+		default.gui_bg..default.gui_bg_img..default.gui_slots..
 		"list[context;cache;0,1;4,3;]"..
 		"item_image[4.8,0;1,1;technic:quarry]"..
 		"label[0,0.2;"..S("%s Quarry"):format("HV").."]"..

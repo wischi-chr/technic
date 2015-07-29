@@ -52,6 +52,7 @@ local function set_injector_formspec(meta)
 	local is_stack = meta:get_string("mode") == "whole stacks"
 	meta:set_string("formspec",
 			"invsize[8,9;]"..
+			default.gui_bg..default.gui_bg_img..default.gui_slots..
 			"item_image[0,0;1,1;technic:injector]"..
 			"label[1,0;"..S("Self-Contained Injector").."]"..
 			(is_stack and

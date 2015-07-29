@@ -51,6 +51,7 @@ local function set_display(pos, meta)
 	meta:set_string("infotext", S(meta:get_int("enabled") ~= 0 and "%s Enabled" or "%s Disabled"):format(desc))
 	meta:set_string("formspec",
 		"size[5,3.5]"..
+		default.gui_bg..default.gui_bg_img..default.gui_slots..
 		"item_image[0,0;1,1;technic:admin_anchor]"..
 		"label[1,0;"..minetest.formspec_escape(desc).."]"..
 		"label[0,1;"..minetest.formspec_escape(S("Owner:").." "..meta:get_string("owner")).."]"..

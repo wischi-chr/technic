@@ -91,6 +91,7 @@ end
 
 local function set_forcefield_formspec(meta)
 	local formspec = "size[5,2.25]"..
+		default.gui_bg..default.gui_bg_img..default.gui_slots..
 		"field[0.3,0.5;2,1;range;"..S("Range")..";"..meta:get_int("range").."]"
 	-- The names for these toggle buttons are explicit about which
 	-- state they'll switch to, so that multiple presses (arising

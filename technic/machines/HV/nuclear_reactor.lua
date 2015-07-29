@@ -30,8 +30,9 @@ minetest.register_craft({
 
 local generator_formspec =
 	"invsize[8,9;]"..
+	default.gui_bg..default.gui_bg_img..default.gui_slots..
 	"label[0,0;"..S("Nuclear Reactor Rod Compartment").."]"..
-	"list[current_name;src;2,1;3,2;]"..
+	"list[current_name;src;2.5,1;3,2;]"..
 	"list[current_player;main;0,5;8,4;]"..
 	"listring[]"
 

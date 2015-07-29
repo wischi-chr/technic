@@ -39,6 +39,7 @@ function technic.register_base_machine(data)
 
 	local formspec =
 		"invsize[8,9;]"..
+		default.gui_bg..default.gui_bg_img..default.gui_slots..
 		"list[current_name;src;"..(4-input_size)..",1;"..input_size..",1;]"..
 		"list[current_name;dst;5,1;2,2;]"..
 		"list[current_player;main;0,5;8,4;]"..

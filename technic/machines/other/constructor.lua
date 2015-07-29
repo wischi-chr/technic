@@ -134,6 +134,7 @@ local function make_constructor(mark, length)
 		on_construct = function(pos)
 			local meta = minetest.get_meta(pos)
 			local formspec = "size[8,9;]"..
+				default.gui_bg..default.gui_bg_img..default.gui_slots..
 				"label[0,0;"..S("Constructor Mk%d"):format(mark).."]"..
 				"list[current_player;main;0,5;8,4;]"
 			for i = 1, length do

@@ -18,6 +18,7 @@ local workshop_demand = {5000, 3500, 2000}
 
 local workshop_formspec =
 	"invsize[8,9;]"..
+	default.gui_bg..default.gui_bg_img..default.gui_slots..
 	"list[current_name;src;3,1;1,1;]"..
 	"label[0,0;"..S("%s Tool Workshop"):format("MV").."]"..
 	"list[current_name;upgrade1;1,3;1,1;]"..

@@ -15,6 +15,7 @@ minetest.register_craft({
 local machine_name = S("Fuel-Fired Alloy Furnace")
 local formspec =
 	"size[8,9]"..
+	default.gui_bg..default.gui_bg_img..default.gui_slots..
 	"label[0,0;"..machine_name.."]"..
 	"image[2,2;1,1;default_furnace_fire_bg.png]"..
 	"list[current_name;fuel;2,3;1,1;]"..
@@ -125,6 +126,7 @@ minetest.register_abm({
 			technic.swap_node(pos, "technic:coal_alloy_furnace_active")
 			meta:set_string("formspec",
 					"size[8,9]"..
+					default.gui_bg..default.gui_bg_img..default.gui_slots..
 					"label[0,0;"..machine_name.."]"..
 					"image[2,2;1,1;default_furnace_fire_bg.png^[lowpart:"..
 					(100 - percent)..":default_furnace_fire_fg.png]"..

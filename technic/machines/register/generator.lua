@@ -29,6 +29,7 @@ function technic.register_generator(data)
 
 	local generator_formspec =
 		"invsize[8,9;]"..
+		default.gui_bg..default.gui_bg_img..default.gui_slots..
 		"label[0,0;"..S("Fuel-Fired %s Generator"):format(tier).."]"..
 		"list[current_name;src;3,1;1,1;]"..
 		"image[4,1;1,1;default_furnace_fire_bg.png]"..
@@ -78,6 +79,7 @@ function technic.register_generator(data)
 		meta:set_string("infotext", desc.." ("..percent.."%)")
 			meta:set_string("formspec", 
 				"size[8, 9]"..
+				default.gui_bg..default.gui_bg_img..default.gui_slots..
 				"label[0, 0;"..minetest.formspec_escape(desc).."]"..
 				"list[current_name;src;3, 1;1, 1;]"..
 				"image[4, 1;1, 1;default_furnace_fire_bg.png^[lowpart:"..
@@ -157,6 +159,7 @@ function technic.register_generator(data)
 			local percent = math.floor(burn_time / burn_totaltime * 100)
 			meta:set_string("formspec", 
 				"size[8, 9]"..
+				default.gui_bg..default.gui_bg_img..default.gui_slots..
 				"label[0, 0;"..minetest.formspec_escape(desc).."]"..
 				"list[current_name;src;3, 1;1, 1;]"..
 				"image[4, 1;1, 1;default_furnace_fire_bg.png^[lowpart:"..

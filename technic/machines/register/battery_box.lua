@@ -63,6 +63,7 @@ function technic.register_battery_box(data)
 
 	local formspec =
 		"invsize[8,9;]"..
+		default.gui_bg..default.gui_bg_img..default.gui_slots..
 		"image[1,1;1,2;technic_power_meter_bg.png]"..
 		"list[current_name;src;3,1;1,1;]"..
 		"image[4,1;1,1;technic_battery_reload.png]"..

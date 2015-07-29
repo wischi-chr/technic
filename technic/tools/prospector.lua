@@ -65,6 +65,7 @@ minetest.register_tool("technic:prospector", {
 		local look_diameter = toolmeta.look_radius * 2 + 1
 		minetest.show_formspec(user:get_player_name(), "technic:prospector_control",
 			"size[7,8.5]"..
+			default.gui_bg..default.gui_bg_img..default.gui_slots..
 			"item_image[0,0;1,1;"..toolstack:get_name().."]"..
 			"label[1,0;"..minetest.formspec_escape(toolstack:get_definition().description).."]"..
 			(toolmeta.target ~= "" and
